@@ -67,7 +67,7 @@ if __name__ == "__main__":
     image = create_image_with_ai(api_key, prompt)
     image_path = "temp_image.jpg"
     image.save(image_path)
-    ascii_result = image_to_ascii(image_path, 100)
+    ascii_result = image_to_ascii(image_path, 200)
     print(ascii_result)
     
     # Optionally delete the temporary image
