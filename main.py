@@ -19,6 +19,8 @@ def get_api_key():
 
 def create_image_with_ai(api_key, prompt):
     openai.api_key = api_key
+
+    print("Loading . . .")  # Displaying the loading message
     
     response = openai.Image.create(
       prompt=prompt,
@@ -62,6 +64,7 @@ def image_to_ascii(image_path, output_width):
 
 
 if __name__ == "__main__":
+    print("For the best view, consider setting your terminal to fullscreen and possibly zooming out.")
     api_key = get_api_key()
     prompt = input("Enter a prompt for image creation: ")
     image = create_image_with_ai(api_key, prompt)
