@@ -1,33 +1,50 @@
-# Image to ASCII Converter
+# AI-Powered Image to ASCII Converter
 
-A simple Python script that converts images into ASCII art, suitable for displaying in terminal or text documents.
+A Python script that leverages OpenAI's DALL·E to generate images from text prompts and subsequently converts those images into ASCII art suitable for displaying in terminal or text documents.
 
 ## Prerequisites
 
-Ensure you have Python 3.x installed. 
+- Python 3.x
 
 ## Installation
 
-1. Clone this repository: git clone https://github.com/bogdansys/AI-Terminal-Image-Creator
+1. **Clone the repository**:
 
-2. Navigate to the repository's directory: cd AI-Terminal-Image-Creator
+git clone https://github.com/bogdansys/AI-Terminal-Image-Creator
 
-3. Install the required packages:pip install -r requirements.txt
+
+2. **Navigate to the repository's directory**:
+
+cd AI-Terminal-Image-Creator
+
+
+3. **Install the required packages**:
+
+pip install -r requirements.txt
 
 
 ## Usage
 
-To convert an image (JPEG or JPG) into ASCII art, use the following command:
+To generate an image from a text prompt using DALL·E and then convert it into ASCII art, execute the script:
 
-python main.py [PATH_TO_YOUR_IMAGE] --width [DESIRED_WIDTH]
+python main.py
 
 
-- Replace `[PATH_TO_YOUR_IMAGE]` with the path to the image you wish to convert.
-- The `--width` argument defines the width of the ASCII representation. Adjust it to fit your terminal or desired size. If not specified, it defaults to 100 characters in width.
+Upon execution, the script will prompt you for:
+
+- OpenAI API key (if not already saved).
+- A text prompt for DALL·E to generate an image.
+   
+The ASCII representation width is set to 100 characters by default. If you want a different width, modify the code accordingly.
 
 ## Example
 
-python main.py sample.jpeg --width 150 
+Simply execute:
+
+python main.py
+
+
+And follow the on-screen prompts.
 
 ## Contributing
 
