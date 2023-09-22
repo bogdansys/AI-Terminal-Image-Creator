@@ -23,9 +23,10 @@ cd AI-Terminal-Image-Creator
 pip install -r requirements.txt
 
 On some machines, installing requirements fails. If this is the case, install them manually with pip: 
-pip install pillow
-pip install openai
-pip install requests
+
+ - pip install pillow
+ - pip install openai
+ - pip install requests
 
 
 ## Usage
